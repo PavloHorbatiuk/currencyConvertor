@@ -1,0 +1,9 @@
+.mainBlock{
+    font-family: Arial sans-serif;
+}
+
+.mainBlock:nth-child(n){
+    font-family: Arial sans-serif;
+    text-align: center;
+
+}

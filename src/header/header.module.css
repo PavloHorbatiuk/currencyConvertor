@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    position: fixed;
+    z-index: 501;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: #0c345f;
+    transition: background 0.3s ease 0s;
+    border-bottom: 1px solid rgb(60, 75, 147);
+    justify-content: space-evenly;
+}
+
+.maineTitle {
+    display: flex;
+    align-items: center;
+}
+
+.header:nth-child(n) {
+    color: white;
+}
+
+.titleUsd, .titleRub, .titleEur {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-left: 5px;
+}
+
+.picture1, .picture2, .picture3 {
+    display: flex;
+    width: 50px;
+    height: 35px;
+}
+
+.headerTititle {
+    /*justify-content: center;*/
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .header {
+        font-size: 10px;
+        justify-content: space-between;
+    }
+}

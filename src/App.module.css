@@ -1,0 +1,54 @@
+.mainBlock {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    align-content: center;
+}
+
+@media (max-width: 800px) {
+    .mainBlock {
+        flex-direction: column;
+        padding: 120px 1rem;
+    }
+}
+
+.headerApp {
+    display: flex;
+}
+
+.maineBlockExchange {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tableBlock {
+    display: flex;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(35 55 80 / 30%) 0px 6px 12px;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.blockExchange {
+    display: flex;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(35 55 80 / 30%) 0px 6px 12px;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+@media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+        flex: 100%;
+    }
+}
+
+

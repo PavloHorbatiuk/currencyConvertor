@@ -23,7 +23,7 @@ function App() {
         dispatch(getCurrency())
     }, [])
 
-    if (!isLoaded) return <div>loading...</div>
+    if (!isLoaded) return <div className={s.loading}>loading...</div>
 
     return (
         <div className={s.mainBlock}>
@@ -31,15 +31,11 @@ function App() {
                 findRub={findRub}
                 findEUR={findEUR} />
             <div className={s.container}>
-                <div className={s.content}>
-                    <div className={s.maineBlockExchange}>
-                        <div className={s.tableBlock}>
-                            <TableForCurrency listCurrency={findCurrency} />
-                        </div>
-                        <div className={s.blockExchange}>
-                            <CurrencyContainer listCurrency={findCurrency} stateData={stateData} />
-                        </div>
-                    </div>
+                <div className={s.tableBlock}>
+                    <TableForCurrency listCurrency={findCurrency} />
+                </div>
+                <div className={s.blockExchange}>
+                    <CurrencyContainer listCurrency={findCurrency} stateData={stateData} />
                 </div>
             </div>
         </div>

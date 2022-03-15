@@ -65,8 +65,16 @@ input {
 
 body {
   margin: 0;
-  font-family: -apple-system, Abril+Fatface, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system,
+    Abril+Fatface,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -77,14 +85,6 @@ code {
     monospace;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1599px) {
-  button {
-    font-size: 13px;
-    padding: 17px 19px;
-    line-height: 21px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   h1 {
     font-size: 24px
@@ -93,7 +93,8 @@ code {
 
 @media screen and (max-width: 769px) {
   h1 {
-    font-size: 24px
+    font-size: 18px;
+    padding: 1rem;
   }
 }
 

@@ -19,8 +19,8 @@ export type DataType = {
 }
 export type CurrencyState = {
     allCurrency: Array<DataType>
-    amount1: number;
-    amount2: number;
+    amount1: number
+    amount2: number
     rateCurrencyFrom: number
     rateCurrencyTo: number
     isBuying: boolean,
@@ -29,8 +29,8 @@ export type CurrencyState = {
 
 const initialState: CurrencyState = {
     allCurrency: [],
-    amount1: 1,
-    amount2: 1,
+    amount1: 0,
+    amount2: 0,
     rateCurrencyFrom: 1,
     rateCurrencyTo: 1,
     isBuying: true,

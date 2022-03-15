@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import s from './currencyContainer.module.css'
 import CurrencyRow from "./currencyRow";
-import {useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import {
     CurrencyState,
     DataType,
@@ -17,7 +17,7 @@ type CurrencyContainerPropsType = {
     stateData: CurrencyState
 }
 
-function CurrencyContainer({listCurrency, stateData}: CurrencyContainerPropsType) {
+function CurrencyContainer({ listCurrency, stateData }: CurrencyContainerPropsType) {
     const dispatch = useDispatch()
 
     const format = (number: number) => {
@@ -54,7 +54,7 @@ function CurrencyContainer({listCurrency, stateData}: CurrencyContainerPropsType
 
     return (
         <div className={s.currency}>
-            <div className={s.title}><h3>Міняю</h3></div>
+            <div className={s.title}><h2>Міняю</h2></div>
             <CurrencyRow
                 listCurrency={listCurrency}
                 onChangeAmount={onChangeAmountFrom}
@@ -63,7 +63,7 @@ function CurrencyContainer({listCurrency, stateData}: CurrencyContainerPropsType
                 currency={stateData.rateCurrencyFrom}
             />
             <div>=</div>
-            <div><h3>Отримую</h3></div>
+            <div><h2>Отримую</h2></div>
             <CurrencyRow
                 listCurrency={listCurrency}
                 onChangeAmount={onChangeAmountTo}

@@ -1,20 +1,26 @@
 .mainBlock {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-wrap: wrap;
-    background-color: #f1f1f1;
-    overflow-x: hidden;
-    align-content: center;
+    background-color: #e6e8eb;
+    width: 100%;
+    height: 100vh;
 }
 
-@media (max-width: 800px) {
-    .mainBlock {
-        flex-direction: column;
-        padding: 120px 1rem;
-    }
+.mainBlock .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2em;
+    width: 100%;
+    height: 100vh;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.mainBlock .content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    margin: auto;
 }
 
 .headerApp {
@@ -45,10 +51,6 @@
     margin: 5px;
 }
 
-@media (max-width: 800px) {
-    .flex-item-right, .flex-item-left {
-        flex: 100%;
-    }
+@media screen and (max-width: 769px) {
+    .mainBlock .container {}
 }
-
-

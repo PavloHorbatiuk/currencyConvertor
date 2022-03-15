@@ -1,47 +1,88 @@
 .header {
-    display: flex;
-    position: fixed;
-    z-index: 501;
-    top: 0px;
-    left: 0px;
     width: 100%;
-    background: #0c345f;
-    transition: background 0.3s ease 0s;
-    border-bottom: 1px solid rgb(60, 75, 147);
+    height: 70px;
+    position: absolute;
+    z-index: 10;
+    background: #7868e6;
+}
+
+.header .container {
+    padding-top: auto;
+    display: flex;
     justify-content: space-evenly;
-}
-
-.maineTitle {
-    display: flex;
     align-items: center;
 }
 
-.header:nth-child(n) {
-    color: white;
+.header .tititle {
+    display: flex;
 }
 
-.titleUsd, .titleRub, .titleEur {
+.header li {
+    padding: 1rem;
+    font-weight: 600;
+    color: #364547;
     display: flex;
+}
+
+.header .headMenu {
+    height: 100%;
     align-items: center;
-    padding: 10px 15px;
-    margin-left: 5px;
+    display: flex;
 }
 
-.picture1, .picture2, .picture3 {
-    display: flex;
+.picture1,
+.picture2,
+.picture3 {
     width: 50px;
     height: 35px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 4px;
 }
 
-.headerTititle {
-    /*justify-content: center;*/
+.headMenu span {
     display: flex;
     align-items: center;
+
 }
 
-@media (max-width: 800px) {
-    .header {
+.headMenu img {
+    display: flex;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .headMenu span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .headMenu span {
+        font-size: 12px;
+    }
+
+    .header li {
+        padding: 0.5rem;
+        font-weight: 600;
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .headMenu span {
         font-size: 10px;
-        justify-content: space-between;
+
+    }
+
+    .picture1,
+    .picture2,
+    .picture3 {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 4px;
     }
 }

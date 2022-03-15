@@ -1,6 +1,6 @@
-import React, {ChangeEvent} from 'react';
+import React, { ChangeEvent } from 'react';
 import s from "./currencyRow.module.css"
-import {DataType} from "../store/CurrencyReducers";
+import { DataType } from "../store/CurrencyReducers";
 
 type CurrencyContainerType = {
     listCurrency: Array<DataType>
@@ -21,9 +21,9 @@ export const CurrencyContainer = React.memo(function (props: CurrencyContainerTy
                 {filteredCurrency.map((m => (<option key={m.r030} value={m.rate}>{m.txt}</option>)))}
             </select>
             <input type="number"
-                   className={s.inputs}
-                   onChange={props.onChangeAmount}
-                   value={props.amount}
+                className={s.inputs}
+                onChange={props.onChangeAmount}
+                value={props.amount}
             />
         </div>
     );

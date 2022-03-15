@@ -1,11 +1,11 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Header from "./header/header";
 import s from "./App.module.css"
-import {useDispatch} from "react-redux";
-import {useAppSelector} from "./store/state";
+import { useDispatch } from "react-redux";
+import { useAppSelector } from "./store/state";
 import CurrencyContainer from './currencyContainer/currencyContainer';
-import {getCurrency} from "./store/CurrencyReducers";
+import { getCurrency } from "./store/CurrencyReducers";
 import TableForCurrency from "./table/tableForCurrency";
 
 
@@ -27,17 +27,19 @@ function App() {
 
     return (
         <div className={s.mainBlock}>
-            <div className={s.headerApp}>
-                <Header findUsd={findUsd}
-                        findRub={findRub}
-                        findEUR={findEUR}/>
-            </div>
-            <div className={s.maineBlockExchange}>
-                <div className={s.tableBlock}>
-                    <TableForCurrency listCurrency={findCurrency}/>
-                </div>
-                <div className={s.blockExchange}>
-                    <CurrencyContainer listCurrency={findCurrency} stateData={stateData}/>
+            <Header findUsd={findUsd}
+                findRub={findRub}
+                findEUR={findEUR} />
+            <div className={s.container}>
+                <div className={s.content}>
+                    <div className={s.maineBlockExchange}>
+                        <div className={s.tableBlock}>
+                            <TableForCurrency listCurrency={findCurrency} />
+                        </div>
+                        <div className={s.blockExchange}>
+                            <CurrencyContainer listCurrency={findCurrency} stateData={stateData} />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -111,7 +111,7 @@ export default function TableForCurrency(props: CurrencyContainerPropsType) {
 
     return (
         <TableContainer className={s.mainBlock} component={Paper}>
-            <h3 className={s.title}> Курс НБУ 1 UAH =</h3>
+            <h1 className={s.title}> Курс НБУ 1 UAH =</h1>
 
             <Table sx={{ minWidth: 300 }} aria-label="custom pagination table">
                 <TableBody>
